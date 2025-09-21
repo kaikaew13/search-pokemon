@@ -14,7 +14,7 @@ const SearchBar = () => {
   };
 
   return (
-    <form onSubmit={handleSearch} className='mx-auto w-[60%] my-8'>
+    <form onSubmit={handleSearch} className='mx-auto w-[100%] md:w-[60%] my-8'>
       <div className='flex w-full'>
         <label className='input mr-4 w-full'>
           <svg

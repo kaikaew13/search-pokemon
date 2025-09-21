@@ -66,8 +66,8 @@ const PokemonResult = ({ name }: PokemonResultProps) => {
         <span className='font-bold'>Max HP: </span>
         {pokemon.maxHP}
       </p>
-      <div className='flex w-full justify-between'>
-        <div className='w-1/2 pr-4'>
+      <div className='flex flex-col md:flex-row w-full justify-between'>
+        <div className='md:w-1/2 md:pr-4'>
           <h3 className='text-2xl font-bold my-4'>Fast Attacks:</h3>
           <div className='overflow-x-auto rounded-box border border-base-content/5 bg-base-100'>
             <table className='table'>
@@ -90,7 +90,7 @@ const PokemonResult = ({ name }: PokemonResultProps) => {
             </table>
           </div>
         </div>
-        <div className='w-1/2 pl-4'>
+        <div className='md:w-1/2 md:pl-4'>
           <h3 className='text-2xl font-bold my-4'>Special Attacks:</h3>
           <div className='overflow-x-auto rounded-box border border-base-content/5 bg-base-100'>
             <table className='table'>
@@ -118,7 +118,7 @@ const PokemonResult = ({ name }: PokemonResultProps) => {
       {pokemon.evolutions === null ? (
         <div>No evolution</div>
       ) : (
-        <div className='overflow-x-auto rounded-box border border-base-content/5 bg-base-100 w-[50%]'>
+        <div className='overflow-x-auto rounded-box border border-base-content/5 bg-base-100 w-[100%] md:w-[50%]'>
           <table className='table'>
             <thead>
               <tr>
