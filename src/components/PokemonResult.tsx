@@ -131,7 +131,7 @@ const PokemonResult = ({ name }: PokemonResultProps) => {
               {pokemon.evolutions.map((each) => (
                 <tr key={each.name}>
                   <td onClick={() => router.push(`/search?q=${each.name}`)}>
-                    <div className='avatar'>
+                    <div className='avatar cursor-pointer'>
                       <div className='rounded-xl h-30 w-30'>
                         <img src={each.image} alt={each.name} />
                       </div>
